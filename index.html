@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style> 
+        body {
+            font-family: monospace;
+            color: #1a465f;
+        }
+        input {
+            width: 70%;
+            display: block;
+            outline: none;
+            border: none;
+            background-color: #FFF;
+            padding: 4px 10px;
+        }
+        button {
+            display: block;
+            width: 20%;
+            color: #FFF;
+            background-color: rgb(253, 156, 139);
+            border: none;
+            outline: none;
+            padding: 4px 10px;
+            cursor: pointer;
+            transition: 330ms;
+        }
+        button:hover {
+            background-color: tomato;
+        }
+        .repo {
+            width: 80%;
+            margin: 20px auto;
+            margin-bottom: 0;
+            display: flex;
+            background-color: #F5F5F5;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        #result {
+            padding: 20px;
+            background-color: #d6d6d6;
+            width: 80%;
+            margin: auto;
+        }
+        .repo_name {
+            margin: 10px 0;
+            border-bottom: 1px solid #1a465f;
+            padding: 8px 2px;
+            cursor: pointer;
+            transition: 400ms;
+        }
+        .repo_name:hover {
+            background-color: #1a465f;
+            color: #FFF;
+        }
+        a,.my_span {
+            float: right;
+            margin: 0 5px;
+        }
+        a {
+            color: #809cf6;
+            text-align: end;
+            transition: 400ms;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #FFF;
+        }
+        @media screen and (max-width: 400px) {
+            body {
+                min-width: 400px;
+            }
+
+        }
+    </style>
+    <form action="" class="repo">
+        <input type="text" name="name" id="name" placeholder="Github Username">
+        <button type="submit">
+            submit
+        </button>
+    </form>
+    <div id="result">
+        <span style="float: left; text-align: center; width: 100%;">
+            No data To show
+        </span>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
